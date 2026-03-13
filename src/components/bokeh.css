@@ -1,0 +1,19 @@
+.bokeh-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bokeh-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, rgba(255,255,255,0.9), rgba(248,131,167,0.6));
+  animation: float-up linear infinite;
+  filter: blur(1px);
+}
+
+.bokeh-dark .bokeh-dot {
+  background: radial-gradient(circle at 35% 35%, rgba(255,255,255,0.7), rgba(180,60,100,0.3));
+}

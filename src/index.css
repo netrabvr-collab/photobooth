@@ -1,0 +1,100 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --rose-100: #fff0f3;
+  --rose-200: #ffd6e0;
+  --rose-300: #ffadc5;
+  --rose-400: #f77fa0;
+  --rose-500: #e8527a;
+  --rose-600: #c93060;
+  --blush:    #f4a7bb;
+  --petal:    #fce4ec;
+  --cream:    #fff8f9;
+  --deep:     #1a0a10;
+  --ink:      #2d1520;
+  --muted:    #9e7585;
+
+  --grad-main: linear-gradient(135deg, #f9c5d1 0%, #e8789a 40%, #c94070 100%);
+  --grad-soft: linear-gradient(160deg, #fce4ec 0%, #f48fb1 50%, #e91e8c22 100%);
+  --grad-dark: linear-gradient(160deg, #1a0810 0%, #3d1030 100%);
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Cormorant Garamond', Georgia, serif;
+  --font-ui:      'DM Sans', sans-serif;
+
+  --radius-sm: 12px;
+  --radius-md: 24px;
+  --radius-lg: 40px;
+  --radius-xl: 60px;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-ui);
+  background: var(--deep);
+  color: var(--cream);
+  overflow: hidden;
+}
+
+button {
+  font-family: var(--font-ui);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ── Bokeh particles ─────────────────────────────────────────── */
+@keyframes float-up {
+  0%   { transform: translateY(0)   scale(1);   opacity: 0.6; }
+  50%  { opacity: 0.9; }
+  100% { transform: translateY(-100vh) scale(0.4); opacity: 0; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 12px 4px rgba(248,131,167,0.4); }
+  50%       { box-shadow: 0 0 28px 10px rgba(248,131,167,0.7); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+@keyframes countdown-pop {
+  0%   { transform: scale(0.4); opacity: 0; }
+  60%  { transform: scale(1.15); }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+@keyframes flash-white {
+  0%   { opacity: 0; }
+  20%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(40px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
